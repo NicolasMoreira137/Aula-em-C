@@ -1,0 +1,38 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    float n1,n2,n3,n4,med;
+
+    printf("ESTE PROGRAMA IRA CALCULAR SUA MEDIA!!\n");
+    printf("Insira a sua primeira nota: ");
+    scanf("%f",&n1);
+    printf("insira a sua segunda nota: ");
+    scanf("%f",&n2);
+    printf("insira a sua terceira nota: ");
+    scanf("%f",&n3);
+    printf("insira a sua quarta nota: ");
+    scanf("%f",&n4);
+    
+    med=(n1+n2+n3+n4)/4;
+    
+    if(med>=7){
+        printf("Você foi aprovado! sua media foi %1.f",med);
+    }
+    else{
+        printf("Você foi reprovado! sua media foi %1.f",med);
+    }
+  
+   
+    return 0;
+}
