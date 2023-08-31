@@ -1,1 +1,27 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+    float n1,n2;
+    printf("ESTE PROGRAMA IRA INFORMAR QUAL NUMERO INSERIDO É MAIOR!!\n");
+    printf("Insira o primeiro numero: ");
+    scanf("%f",&n1);
+    printf("insira o segundo numero: ");
+    scanf("%f",&n2);
+    
+    if(n1>n2) {
+       printf("O primeiro numero é maior!");
+    }
+    else if (n1<n2){
+        printf("O segundo numero é maior!");
+    }
+    else if(n2==n1){
+        printf("Os dois numeros são iguais");
+    }
+    
+   
+   
+    return 0;
+}
 
