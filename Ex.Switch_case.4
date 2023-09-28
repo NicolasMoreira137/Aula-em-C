@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+int main()
+{
+    int con;
+
+    printf("digite o código do produto: ");
+    scanf("%d",&con);
+
+    switch (con)
+    {
+    case 1:
+        printf(" o produto não é perecível");
+        break;
+    case 2:
+    case 3:
+    case 4:
+        printf(" o produto é perecível");
+        break;
+    case 5:
+    case 6:
+        printf(" o produto é um vestuário");
+        break;
+
+    case 7:
+        printf(" o produto é de higiene pessoal");
+        break;
+
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+        printf("o produto é de limpeza ou utensílios domésticos ");
+        break;
+    default:
+        printf("intem inválido");
+    }
+    return 0;
+}
