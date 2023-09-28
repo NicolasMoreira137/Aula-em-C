@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+{
+    char con;
+
+    printf("Digita o seu conceito aí: ");
+    scanf("%s",&con);
+
+    switch (con)
+    {
+    case 'A':
+    case 'a':
+    case 'B':
+    case 'b':
+    case 'C':
+    case 'c':
+        printf(" você foi aprovado");
+        break;
+
+    case 'D':
+    case 'd':
+        printf(" você tá de exame hein!");
+        break;
+
+    case 'E':
+    case 'e':
+        printf(" você tá lascado");
+        break;
+
+    default:
+        printf("digita o bagulho direito ai");
+    }
+    return 0;
+}
