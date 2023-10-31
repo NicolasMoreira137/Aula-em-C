@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int numero, somaNegativos = 0, contadorPositivos = 0, somaPositivos = 0;
+
+    while (1) {
+        printf("Digite um número (0 para sair): ");
+        scanf("%d", &numero);
+
+        if (numero < 0) {
+            somaNegativos += numero;
+        } else if (numero > 0) {
+            somaPositivos += numero;
+            contadorPositivos++;
+        } else if (numero == 0) {
+            if (contadorPositivos != 0) {
+                double mediaPositivos = (double)somaPositivos / contadorPositivos;
+                printf("Soma dos Negativos: %d\n", somaNegativos);
+                printf("Média dos Positivos: %lf\n", mediaPositivos);
+            } else {
+                printf("Nenhum número positivo foi inserido.\n");
+            }
+            break;
+        }
+    }
+
+    return 0;
+}
